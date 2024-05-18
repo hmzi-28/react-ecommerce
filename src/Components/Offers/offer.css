@@ -1,0 +1,41 @@
+.offers{
+    width: 100%;
+    /* padding:0 30px; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+#offerCard{
+    width: 19%;
+    height: 130px;
+    background-color: #f2f3f4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+
+}
+#offerCard p{
+    font-size: 16px;
+    color: #b3b3b3;
+}
+#offerCard a{
+    color: #253D4E;
+    font-size: 18px;
+    font-weight: 600;
+}
+#offerCard img{
+    width: 20%;
+    object-fit: contain;
+}
+@media(max-width:567px){
+    .offers{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    #offerCard{
+        width: 100%;
+    }
+}

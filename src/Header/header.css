@@ -1,0 +1,244 @@
+nav {
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header .logo a {
+    color: #3bb77e;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 10px;
+}
+
+.header .logo p {
+    color: #253d4e;
+    line-height: 10px;
+    font-size: 11px;
+}
+
+.header .logo>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header .head-center {
+    background-color: white;
+    display: flex;
+    width: 37vw;
+    border: 2px solid #E8E8E8;
+    height: 50px;
+    align-items: center;
+    padding: 0 1vw;
+    border-radius: 25px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+
+.header .head-center .search-bar {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.header .head-center .search-bar>input {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 100%;
+    padding-left: 10px !important;
+    font-size: 14px;
+}
+
+.search-bar input::placeholder {
+    color: #7e7777;
+}
+
+.search-bar input:active {
+    outline: none;
+}
+
+.header .head-center .search-icon {
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+    color: #7e7777;
+    right: 0;
+    cursor: pointer;
+}
+
+.header .head-center .search-icon svg {
+    vertical-align: inherit;
+}
+
+.search-result {
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    max-height: 350px;
+    top: 105%;
+    height: auto;
+    left: 0;
+    border-radius: 5px;
+    z-index: 999;
+    padding: 20px 20px 20px 25px;
+    border: 1px solid #ececec;
+    /* overflow-y: scroll; */
+}
+
+.search-item {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    gap: 1.7vw;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.search-item .image-wraper {
+    height: 100%;
+    width: auto;
+    border: 1px solid #ececec;
+    display: flex;
+    align-items: center;
+}
+
+.search-item img {
+    height: 85%;
+}
+
+.header .head-end {
+    display: flex;
+    gap: 1vw;
+}
+
+.header .head-end #iconbg {
+    width: 7vw;
+    height: 50px;
+    border-radius: 3.5vw;
+    background-color: white;
+    border: 2px solid #E8E8E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    position: relative;
+}
+
+.header .head-end .cart-count {
+    position: absolute;
+    top: 2px;
+    right: 20.5%;
+    width: 20px;
+    /* Width and height are the same */
+    height: 20px;
+    /* Changed from 2vh to 2vw */
+    background: #3BB77E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* Make it a circle */
+    font-size: 12px;
+}
+
+.header .head-end .user {
+    position: relative;
+    cursor: pointer;
+}
+
+.header .head-end .user ul {
+    position: absolute;
+    width: 11vw;
+    background-color: #f1f1f1;
+    top: 130%;
+    height: auto;
+    right: -2vw;
+    border-radius: .3vw;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header .head-end .user ul li {
+    list-style: none;
+    width: 100%;
+    text-align: start;
+}
+
+.header .head-end .user ul li button {
+    font-family: "Quicksand", sans-serif;
+
+    width: 100% !important;
+    justify-content: flex-start;
+    text-transform: capitalize;
+    color: black;
+    gap: .6vw;
+    font-size: 2.5vh;
+
+
+}
+.menu-icon{
+    display: none;
+}
+
+@media(max-width:567px) {
+    .compare-iconbg {
+        display: none !important;
+    }
+
+    .user-iconbg {
+        display: none !important;
+    }
+    
+    .header-wrapper{
+        height: 140px;
+    }
+    .header .head-center{
+        position: absolute;
+        top: 80px;
+        width: 94%;
+        margin: auto;
+     
+
+    }
+    .header .head-end{
+        gap: 10px;
+        align-items: center;
+    }
+    .header .head-end .cart-count {
+        position: absolute;
+        top: 5px;
+        right: -2.5%;
+    }
+    .header .head-end #iconbg {
+        width:50px;
+        height: 50px;
+        border-radius: 21px;
+        border: none;
+        font-size: 25px;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 30px;
+    }
+    .category-menu {
+        display: none;
+    }
+  
+}

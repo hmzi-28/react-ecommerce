@@ -45,7 +45,11 @@ margin-bottom: 15px;
         height: 580px;
     }
     #subFooter{
-        width: 45% !important;
+        width: 44% !important;
         gap: 15px;
+    }
+    .rights{
+        width: 100%;
+        text-align: center;
     }
 }

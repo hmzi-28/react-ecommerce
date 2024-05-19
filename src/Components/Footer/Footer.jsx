@@ -6,9 +6,10 @@ const Footer = () => {
     <>
   
 
-    <div className="footer-wrapper">
+
     <div className="container-fluid">
 
+    <div className="footer-wrapper">
     <div className="footer">
       <div className="footerOne" id='subFooter'>
         <h3>About Us</h3>

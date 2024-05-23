@@ -49,7 +49,7 @@ const Navbar = ({ menuOpen,setMenuOpen, toggleMenu ,products}) => {
                         {products.map((product) => (
                           <li key={product.id}>
                             <img src={product.image} alt="" />
-                            <Link to={`category/${product.cat_name}`} onClick={() => setOpenCatMenu(false)}>{product.cat_name}</Link>
+                            <Link to={`/${product.cat_name}`} onClick={() => setOpenCatMenu(false)}>{product.cat_name}</Link>
                           </li>
                         ))}
                       </ul>

@@ -54,7 +54,7 @@ const settings = {
             {allProducts.map((product, productIndex) => (
               product.items && product.items.map((item, itemIndex) => (
                 <div key={itemIndex} className='sub-category-card'>
-                  <Link to={`/category/${product.cat_name}/${item.cat_name.replace(/\s+/g, '-')}`}>
+                  <Link to={`/${product.cat_name}/${item.cat_name.replace(/\s+/g, '-')}`}>
                     <img src={item.Image} alt={item.cat_name} />
                     <h4>{item.cat_name}</h4>
                     <p>{item.products.length}</p>

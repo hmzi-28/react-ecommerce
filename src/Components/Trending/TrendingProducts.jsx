@@ -15,7 +15,7 @@ const TrendingProducts = ({products}) => {
             <div className="container-fluid">
                 <div className="product-container">
                     {trendingProducts && trendingProducts.map((item, index) => {
-                        // Remove $ and commas before parsing the price
+                
                         const price = parseFloat(item.price.replace(/[$,]/g, ''));
                         const oldPrice = parseFloat(item.oldPrice.replace(/[$,]/g, ''));
 

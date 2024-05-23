@@ -1,0 +1,19 @@
+.filters{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.filter-right{
+    display: flex;
+    gap: 30px;
+}
+.filters select{
+    height: 40px;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    outline: none;
+    font-family: "Quicksand", sans-serif;
+    padding: 0 10px;
+}
